@@ -1,0 +1,62 @@
+import random
+import string
+
+mylist = ["+", "-", "*", "//", "**", "%"]
+
+oper = random.choice(mylist)
+
+x = random.randint(1,100)
+y = random.randint(1,100)
+z = random.randint(0,3)
+total = x + y
+product = x * y
+sub = x - y
+quo = x // y
+rem = x % y
+exp = x ** z
+
+if oper == "+":
+    print (x, "+" ,y, "=")
+    i = int(input("Enter the sum"))
+    if i == total:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", total)
+elif oper == "-":
+    print (x ,"-", y, "=")
+    i = int(input("Enter the difference"))
+    if i == sub:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", sub)
+elif oper == "*":
+    print (x, "*", y, "=")
+    i = int(input("Enter the product"))
+    if i == product:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", product)
+elif oper == "//":
+    print (x ,"//", y, "=")
+    i = int(input("Enter the quotient"))
+    if i == quo:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", quo)
+elif oper == "**":
+    print (x, "**", z, "=")
+    i = int(input("Enter the exp product"))
+    if i == exp:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", exp)
+elif oper == "%":
+    print (x ,"%", y, "=")
+    i = int(input("Enter the remainder"))
+    if i == rem:
+        print ("Congrats")
+    else:
+        print ("No the correct answer is ", rem)
+else:
+    print ("Incorrect operator")
+    
