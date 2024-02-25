@@ -1,0 +1,24 @@
+import random
+
+i = 1
+
+print("Alice's addition Academy")
+
+while (i < 11) :
+    x = random.randint(1,100)
+    y = random.randint(1,100)
+
+    print("Question ", i,":", x, "+", y)
+    z = int(input("Enter the sum "))
+
+    total = x + y
+
+    if total == z:
+        print ("Congratulations!")
+    else :
+        print ("No the correct answer is ", total)
+   
+    if i == 10:
+        break
+
+    i += 1
